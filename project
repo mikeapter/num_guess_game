@@ -1,0 +1,10 @@
+import random
+#Michael Apter
+user_num = int(input('What number am I thinking of?'))
+pc_num = random.randint(1, 25)
+if user_num > pc_num:
+    print(f'{user_num} is too high. I was thinking of {pc_num}.')
+elif user_num < pc_num:
+    print(f'{user_num} is too low. I was thinking of {pc_num}.')
+elif user_num == pc_num:
+    print(f'{user_num} is correct!')
